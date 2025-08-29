@@ -12,6 +12,8 @@
 
 JSPBoard는 **순수 Java 웹 기술**로 구현된 다기능 게시판 시스템입니다. Spring Framework 없이 **Servlet**, **JSP**, **JDBC**를 활용하여 완전한 웹 애플리케이션을 구현했습니다.
 
+<img src="/images/JSPBoard.png">
+
 ### 🎯 핵심 특징
 - **🔧 순수 Java 웹 기술** - Spring Framework 미사용
 - **📐 MVC 패턴 구현** - 명확한 계층 분리
@@ -54,11 +56,15 @@ JSPBoard는 **순수 Java 웹 기술**로 구현된 다기능 게시판 시스�
 - **회원 목록 조회** - 관리자 기능
 - **회원 상태 관리** - 활성/비활성 처리
 
+<img src="/images/JSPBoard_paging.gif">
+
 ### 📝 게시판 시스템
 - **다중 게시판** - 카테고리별 게시판 생성
 - **게시글 CRUD** - 작성, 읽기, 수정, 삭제
 - **검색 기능** - 제목/내용 통합 검색
 - **페이징 처리** - 효율적인 대용량 데이터 처리
+
+<img src="/images/JSPBoard_imgupload_download.gif">
 
 ### 📎 파일 관리
 - **다중 파일 업로드** - Multipart 지원
