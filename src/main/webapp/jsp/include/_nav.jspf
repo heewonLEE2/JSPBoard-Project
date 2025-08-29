@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="${cpath}/index.do">JSPBoard</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="topNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="${cpath}/board/listBoard.do">게시판목록</a></li>
+        <li class="nav-item"><a class="nav-link" href="${cpath}/article/listArticle.do">게시물목록</a></li>
+        <li class="nav-item"><a class="nav-link" href="${cpath}/member/listMember.do">회원목록</a></li>
+      </ul>
+      <ul class="navbar-nav">
+        <c:choose>
+          <c:when test="${not empty sessionScope.loginMember}">
+            <li class="nav-item"><span class="navbar-text me-2">안녕하세요, <strong>${sessionScope.loginMember.mname}</strong>님</span></li>
+            <li class="nav-item"><a class="btn btn-outline-light btn-sm" href="${cpath}/member/logout.do">로그아웃</a></li>
+          </c:when>
+          <c:otherwise>
+             <li class="nav-item"><a class="btn btn-outline-light btn-sm" href="${cpath}/member/registMember.do">회원가입</a></li>&nbsp;
+            <li class="nav-item"><a class="btn btn-outline-light btn-sm" href="${cpath}/member/login.do">로그인</a></li>
+          </c:otherwise>
+        </c:choose>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="container">
