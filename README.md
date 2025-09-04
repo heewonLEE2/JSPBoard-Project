@@ -22,27 +22,6 @@ JSPBoard는 **순수 Java 웹 기술**로 구현된 다기능 게시판 시스�
 - **💬 실시간 댓글** - Ajax 기반 동적 댓글 시스템
 - **🔐 세션 기반 인증** - 로그인/로그아웃 처리
 
-## 🛠️ 기술 스택
-
-### Backend
-- **Language**: Java 8+
-- **Web Server**: Apache Tomcat 9.0+
-- **Database**: Oracle Database
-- **Connection Pool**: HikariCP
-- **Build Tool**: Maven
-
-### Frontend
-- **Template**: JSP (JavaServer Pages)
-- **Styling**: Bootstrap 5
-- **JavaScript**: jQuery + Axios
-
-### Architecture Patterns
-- **MVC Pattern** - Model, View, Controller 분리
-- **Command Pattern** - 요청별 커맨드 객체
-- **DAO Pattern** - 데이터 접근 계층
-- **Service Pattern** - 비즈니스 로직 계층
-- **Singleton Pattern** - 유틸리티 클래스
-
 ## 📋 주요 기능
 
 ### 🏠 대시보드
@@ -76,6 +55,27 @@ JSPBoard는 **순수 Java 웹 기술**로 구현된 다기능 게시판 시스�
 - **실시간 댓글** - Ajax 기반 비동기 처리
 - **댓글 CRUD** - 동적 추가/삭제
 - **권한 제어** - 작성자만 삭제 가능
+
+## 🛠️ 기술 스택
+
+### Backend
+- **Language**: Java 8+
+- **Web Server**: Apache Tomcat 9.0+
+- **Database**: Oracle Database
+- **Connection Pool**: HikariCP
+- **Build Tool**: Maven
+
+### Frontend
+- **Template**: JSP (JavaServer Pages)
+- **Styling**: Bootstrap 5
+- **JavaScript**: jQuery + Axios
+
+### Architecture Patterns
+- **MVC Pattern** - Model, View, Controller 분리
+- **Command Pattern** - 요청별 커맨드 객체
+- **DAO Pattern** - 데이터 접근 계층
+- **Service Pattern** - 비즈니스 로직 계층
+- **Singleton Pattern** - 유틸리티 클래스
 
 ## 📁 프로젝트 구조
 
